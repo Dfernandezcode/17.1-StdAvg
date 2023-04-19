@@ -1,0 +1,34 @@
+{
+  "name": "17.1-stdavg",
+  "version": "0.0.1",
+  "description": "17.1 project for theValley nodeJS module",
+  "main": "write.js",
+  "scripts": {
+    "test": " ",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dfernandezcode/17.1-StdAvg.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Daniel Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dfernandezcode/17.1-StdAvg/issues"
+  },
+  "homepage": "https://github.com/Dfernandezcode/17.1-StdAvg#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3"
+  }
+}
