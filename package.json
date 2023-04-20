@@ -5,7 +5,11 @@
   "main": "write.js",
   "scripts": {
     "test": " ",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint src",
+    "write": "node write.js",
+    "read": "node read.js",
+    "calculate-grades": "node calculate-grades.js"
   },
   "repository": {
     "type": "git",
