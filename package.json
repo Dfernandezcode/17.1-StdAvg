@@ -7,9 +7,9 @@
     "test": " ",
     "prepare": "husky install",
     "lint": "eslint src",
-    "write": "node write.js",
-    "read": "node read.js",
-    "calculate-grades": "node calculate-grades.js"
+    "write": "node ./src/write.js",
+    "read": "node ./src/read.js",
+    "calculate-grades": "node ./src/calculate-grades.js"
   },
   "repository": {
     "type": "git",
