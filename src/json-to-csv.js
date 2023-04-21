@@ -7,7 +7,7 @@ const convertJsonToCsv = (jsonData) => {
   // Encabezados
   const firstItemInJson = jsonData[0];
   const headers = Object.keys(firstItemInJson);
-  csv = csv + headers.join(";") + "; \n";
+  csv = csv + headers.join(",") + ", \n";
 
   // Datos
 
@@ -15,7 +15,7 @@ const convertJsonToCsv = (jsonData) => {
   jsonData.forEach((item) => {
     // Dentro de cada fila recorremos todas las propiedades
     headers.forEach((header) => {
-      csv = csv + item[header] + ";";
+      csv = csv + item[header] + ",";
     });
     csv = csv + "\n";
   });

@@ -28,9 +28,17 @@ const calculateAverageGrade = (filePath, callback) => {
         return { name, average: avg };
       });
 
+      // Sort averages array by the average property in descending order
       averages.sort((a, b) => b.average - a.average);
 
-      callback(null, averages);
+      // Write the averages array to a new JSON file
+      fs.writeFile("averages.json", JSON.stringify(averages), (err) => {
+        if (err) {
+          callback(err);
+        } else {
+          callback(null, averages);
+        }
+      });
     }
   });
 };
